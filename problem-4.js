@@ -1,7 +1,7 @@
 const findtotalPriceAfterDiscount = (products, category)=>{
 
     const totalPrice = products.filter(product => product.category === category ).map(product => product.price * 0.85).reduce((total, price)=>{
-        
+
         return total + price 
     },0)
 
