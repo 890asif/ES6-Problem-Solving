@@ -2,7 +2,7 @@ const totalageFind = (peoples)=>{
 
  const totalAge = peoples.map(people => people.age).reduce((total, age)=>{
     
-    return total + age;
+    return total += age;
  },0)
 
  return totalAge
