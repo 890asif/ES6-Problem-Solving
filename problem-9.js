@@ -1,4 +1,4 @@
-const getHigherScore = (students)=>{
+const getHighScore = (students)=>{
 
     const result = students.filter(student => student.marks > 80).map(student => student.name.toUpperCase())
         
@@ -10,4 +10,4 @@ const students = [
   { name: "Nadia", marks: 95 }
 ];
 
-console.log(getHigherScore(students))
+console.log(getHighScore(students))
